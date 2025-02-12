@@ -1,0 +1,204 @@
+:root {
+  background-color: rgb(220, 227, 235);
+}
+:root h1, :root h2, :root h3, :root a {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+}
+:root p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root button {
+  border-radius: 3px;
+}
+
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/statue-liberty.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container .hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-container .hero-content-wrapper h1 {
+  font-size: 67px;
+  margin-bottom: 20px;
+}
+.hero-container .hero-content-wrapper p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.hero-container .hero-content-wrapper button {
+  padding: 14px 33px;
+  margin-top: 30px;
+  color: white;
+  background-color: #e91e63;
+  border: 1px solid #e91e63;
+  transition: 0.3s ease;
+}
+.hero-container .hero-content-wrapper button:hover {
+  box-shadow: 0 2px 15px 0 rgba(233, 30, 99, 0.14), 0 3px 10px -2px rgba(233, 30, 99, 0.2), 0 1px 15px 0 rgba(233, 30, 99, 0.2);
+}
+
+.page-container {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: -8%;
+  background-color: white;
+}
+.page-container .mission-container {
+  padding: 10px 20px;
+  text-align: center;
+}
+.page-container .mission-container h2 {
+  font-size: 37px;
+}
+.page-container .mission-container .mission-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  padding: 100px 80px;
+}
+.page-container .mission-container .mission-content-wrapper h3 {
+  font-size: 18px;
+}
+.page-container .mission-container .mission-content-wrapper p {
+  font-size: 14px;
+  color: grey;
+}
+.page-container .about-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/slider1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.page-container .about-container .about-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 20px 100px;
+  margin-top: 25px;
+  width: 100%;
+}
+.page-container .about-container .about-content-wrapper .about-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.page-container .about-container .about-content-wrapper .about-content h2 {
+  font-size: 37px;
+}
+.page-container .about-container .about-content-wrapper .about-content p {
+  font-size: 18px;
+}
+.page-container .about-container .about-content-wrapper img {
+  max-width: 500px;
+}
+.page-container .blog-container {
+  padding: 50px 20px;
+}
+.page-container .blog-container h2 {
+  text-align: center;
+  font-size: 37px;
+}
+.page-container .blog-container .blog-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  padding: 50px 80px;
+  padding-bottom: 100px;
+}
+.page-container .blog-container .blog-content-wrapper a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+.page-container .blog-container .blog-content-wrapper a:hover {
+  opacity: 0.5;
+}
+.page-container .blog-container .blog-content-wrapper .blog-content p a {
+  color: rgb(39, 39, 163);
+}
+.page-container .blog-container .blog-content-wrapper .blog-content p a:hover {
+  color: #e91e63;
+}
+.page-container .blog-container .blog-content-wrapper h3 {
+  font-size: 18px;
+}
+.page-container .blog-container .blog-content-wrapper p {
+  font-size: 14px;
+  color: grey;
+}
+.page-container .contact-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/slider1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-top: -5%;
+}
+.page-container .contact-container .contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  padding-top: 140px;
+}
+.page-container .contact-container .contact-content-wrapper h2 {
+  font-size: 37px;
+  margin: 20px 0 30px;
+}
+.page-container .contact-container .contact-content-wrapper .contact-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+.page-container .contact-container .contact-content-wrapper .contact-label .contact-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-container .contact-container .contact-content-wrapper .contact-label i {
+  font-size: 27px;
+}
+.page-container .contact-container .contact-content-wrapper .contact-label p {
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+footer {
+  height: 100px;
+  background-color: rgb(49, 49, 49);
+}
+footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 100px;
+  padding: 25px;
+  font-size: 14px;
+}
+footer .footer-wrapper .foot-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  transition: 0.3s ease;
+}
+footer .footer-wrapper .foot-links a:hover {
+  color: grey;
+}/*# sourceMappingURL=main.css.map */

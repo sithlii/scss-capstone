@@ -11,13 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="./styles/common/common.css">
+    <link rel="stylesheet" href="./styles/main/main.css">
 
 </head>
 <body>
     <header>
         <nav>
-            <a href="./index.html"><h6>Hestia</h6></a>
+            <a href="./index.html"><h3>Hestia</h3></a>
             <div class="nav-links">
                 <a href="./index.html">HOME</a>
                 <a href="./pages/blog.html">BLOG</a>
@@ -59,27 +60,29 @@
 
         <div class="about-container">
             <div class="about-content-wrapper">
-                <h2>About Hestia</h2>
-                <p>Need more details? Please check our full documentation for detailed information on how to use Hestia.</p>
+                <div class="about-content">
+                    <h2>About Hestia</h2>
+                    <p>Need more details? Please check our full documentation for detailed information on how to use Hestia.</p>
+                </div>
                 <img src="./assets/about-content.png" alt="about-content">
             </div>
         </div>
 
         <div class="blog-container">
-            <h3>Blog</h3>
+            <h2>Blog</h2>
             <div class="blog-content-wrapper">
                 <div class="blog-content">
-                    <a href="#">UNCATEGORIZED</a>
+                    <a href="#" style="color: purple">UNCATEGORIZED</a>
                     <a href="#"><h3>Worth A Thousand Words</h3></a>
                     <p>Out of scope.</p>
                 </div>
                 <div class="blog-content">
-                    <a href="#">UNCATEGORIZED</a>
+                    <a href="#" style="color: teal">UNCATEGORIZED</a>
                     <a href="./pages/elements.html"><h3>Elements</h3></a>
                     <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any <a href="./pages/elements.html">Read more</a>...</p>
                 </div>
                 <div class="blog-content">
-                    <a href="#">UNCATEGORIZED</a>
+                    <a href="#" style="color: orange">UNCATEGORIZED</a>
                     <a href="./pages/hachtml.html"><h3>HTML</h3></a>
                     <p>What HTML tags would you like to see? Let's start with an unordered list: One Two Three Four And then move on to a more interesting ordered list: one, two buckle my shoe three, four <a href="./pages/hachtml.html">Read more</a>...</p>
                 </div>
@@ -90,11 +93,17 @@
             <div class="contact-content-wrapper">
                 <h2>Get in Touch</h2>
                 <div class="contact-label">
-                    <i class="fa-solid fa-location-dot"></i> Find us at the office
+                    <div class="contact-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Find us at the office</h3>
+                    </div>
                     <p>Strada Povernei, nr 20, Bucharest, Romania</p>
                 </div>
                 <div class="contact-label">
-                    <i class="fa-solid fa-mobile-screen-button"></i> Give us a ring
+                    <div class="contact-title">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Give us a ring</h3>
+                    </div>
                     <p>John Doe +40 712 345 678 Mon - Fri, 8:00-22:00</p>
                 </div>
             </div>
@@ -102,11 +111,13 @@
     </div>
 
     <footer>
-        <div class="foot-links">
-            <a href="#">ABOUT</a>
-            <a href="#">PARENT PAGE</a>
+        <div class="footer-wrapper">
+            <div class="foot-links">
+                <a href="#">ABOUT</a>
+                <a href="#">PARENT PAGE</a>
+            </div>
+            <p>Hestia | Developed by ThemeIsle</p>
         </div>
-        <p>Hestia | Developed by ThemeIsle</p>
     </footer>
 </body>
 </html>
