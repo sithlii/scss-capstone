@@ -20,48 +20,73 @@ header > nav > .nav-links a:nth-child(3) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 2%;
+    padding-bottom: 7%;
     background-color: white;
     color: $text;
-    h1 {
-        font-size: 37px;
-        padding-bottom: 60px;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 80%;
-        padding-left: 10%;
-        input, textarea {
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-bottom: 1px solid grey;
-            outline: none;
-            transition: .1s ease-in-out;
-            &:focus {
-                border-bottom: 1px solid $color;
+    .left-column {
+        h1 {
+            font-size: 37px;
+            padding-bottom: 60px;
+            padding-left: 10%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            padding-left: 10%;
+            input, textarea {
+                width: 90%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: none;
+                border-bottom: 1px solid grey;
+                outline: none;
+                transition: .1s ease-in-out;
+                &:focus {
+                    border-bottom: 1px solid $color;
+                }
+            }
+            textarea {
+                font-family:Arial, Helvetica, sans-serif;
+                resize: none;
+            }
+            button[type='submit'] {
+                max-width: 120px;
+                color: white;
+                padding: 14px 33px;
+                color: white;
+                background-color: $color;
+                border: 1px solid $color;
+                transition: .3s ease;
+                &:hover {
+                    box-shadow: 0 10px 15px 0 rgba(233,30,99,.14),0 3px 10px -2px rgba(233,30,99,0.2),0 1px 15px 0 rgba(233,30,99,0.2);
+                }
             }
         }
-        textarea {
-            font-family:Arial, Helvetica, sans-serif;
-            resize: none;
-        }
-        button[type='submit'] {
-            max-width: 120px;
-            color: white;
-            padding: 14px 33px;
-            margin-top: 30px;
-            color: white;
-            background-color: $color;
-            border: 1px solid $color;
-            transition: .3s ease;
-            &:hover {
-                box-shadow: 0 10px 15px 0 rgba(233,30,99,.14),0 3px 10px -2px rgba(233,30,99,0.2),0 1px 15px 0 rgba(233,30,99,0.2);
+    }
+    .right-column {
+        .contact-label {
+            display:flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: flex-start;
+            padding-top: 7%;
+            .contact-title {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            i {
+                font-size: 27px;
+                color: $color;
+            }
+            p {
+                font-size: 14px;
+                margin-left: 30px;
+                margin-top: 0;
             }
         }
     }
-
 }

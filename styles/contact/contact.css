@@ -3,6 +3,8 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100vw;
+  line-height: 1.618;
+  font-weight: 300;
   overflow-x: hidden;
   background-color: rgb(220, 227, 235);
 }
@@ -83,7 +85,7 @@ header nav .nav-links button:hover {
 }
 
 footer {
-  height: 90px;
+  height: 100px;
   background-color: rgb(49, 49, 49);
 }
 footer .footer-wrapper {
@@ -96,6 +98,8 @@ footer .footer-wrapper {
   font-size: 14px;
 }
 footer .footer-wrapper .foot-links a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   text-decoration: none;
   color: white;
   margin-right: 50px;
@@ -131,22 +135,24 @@ header > nav > .nav-links a:nth-child(3):hover {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  padding: 20px;
+  padding: 2%;
+  padding-bottom: 7%;
   background-color: white;
   color: #3c4858;
 }
-.page-container h1 {
+.page-container .left-column h1 {
   font-size: 37px;
   padding-bottom: 60px;
+  padding-left: 10%;
 }
-.page-container form {
+.page-container .left-column form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 80%;
   padding-left: 10%;
 }
-.page-container form input, .page-container form textarea {
+.page-container .left-column form input, .page-container .left-column form textarea {
   width: 90%;
   padding: 10px;
   margin-bottom: 15px;
@@ -155,23 +161,43 @@ header > nav > .nav-links a:nth-child(3):hover {
   outline: none;
   transition: 0.1s ease-in-out;
 }
-.page-container form input:focus, .page-container form textarea:focus {
+.page-container .left-column form input:focus, .page-container .left-column form textarea:focus {
   border-bottom: 1px solid #e91e63;
 }
-.page-container form textarea {
+.page-container .left-column form textarea {
   font-family: Arial, Helvetica, sans-serif;
   resize: none;
 }
-.page-container form button[type=submit] {
+.page-container .left-column form button[type=submit] {
   max-width: 120px;
   color: white;
   padding: 14px 33px;
-  margin-top: 30px;
   color: white;
   background-color: #e91e63;
   border: 1px solid #e91e63;
   transition: 0.3s ease;
 }
-.page-container form button[type=submit]:hover {
+.page-container .left-column form button[type=submit]:hover {
   box-shadow: 0 10px 15px 0 rgba(233, 30, 99, 0.14), 0 3px 10px -2px rgba(233, 30, 99, 0.2), 0 1px 15px 0 rgba(233, 30, 99, 0.2);
+}
+.page-container .right-column .contact-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding-top: 7%;
+}
+.page-container .right-column .contact-label .contact-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page-container .right-column .contact-label i {
+  font-size: 27px;
+  color: #e91e63;
+}
+.page-container .right-column .contact-label p {
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 0;
 }/*# sourceMappingURL=contact.css.map */
