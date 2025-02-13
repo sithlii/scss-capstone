@@ -1,13 +1,9 @@
+@use "../common/common.scss" as *;
+
 :root {
-    background-color: rgb(220, 227, 235);
-    h1, h2, h3, a {
-        font-family: "Roboto Slab", "Times New Roman", serif;
-    }
-    p {
+    .blog-content a:nth-child(1) {
         font-family: Arial, Helvetica, sans-serif;
-    }
-    button {
-        border-radius: 3px;
+        font-size: 12px;
     }
 }
 
@@ -30,17 +26,19 @@
         h1 {
             font-size: 67px;
             margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         p {
             margin-top: 10px;
             font-size: 18px;
+            font-family: "Roboto-Slab";
         }
         button {
             padding: 14px 33px;
             margin-top: 30px;
             color: white;
-            background-color: #e91e63;
-            border: 1px solid #e91e63;
+            background-color: $color;
+            border: 1px solid $color;
             transition: .3s ease;
             &:hover {
                 box-shadow: 0 2px 15px 0 rgba(233,30,99,.14),0 3px 10px -2px rgba(233,30,99,0.2),0 1px 15px 0 rgba(233,30,99,0.2);
@@ -50,10 +48,8 @@
 }
 
 .page-container {
-    width: 95%;
-    margin-left:2.5%;
-    margin-top: -8%;
-    background-color: white;
+    @include page-styles;
+    border-width: 0;
     .mission-container {
         padding: 10px 20px;
         text-align: center;
@@ -131,7 +127,7 @@
             .blog-content p a {
                 color: rgb(39, 39, 163);
                 &:hover {
-                    color: #e91e63;
+                    color: $color;
                 }
             }
             h3 {
@@ -178,29 +174,6 @@
                     margin-left: 30px;
                     margin-top: 0;
                 }
-            }
-        }
-    }
-}
-
-footer {
-    height:100px;
-    background-color: rgb(49, 49, 49);
-    .footer-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-        margin: 0 100px;
-        padding: 25px;
-        font-size: 14px;
-        .foot-links a{
-            text-decoration: none;
-            color: white;
-            margin-right: 50px;
-            transition: .3s ease;
-            &:hover {
-                color: grey;
             }
         }
     }

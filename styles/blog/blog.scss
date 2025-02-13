@@ -1,0 +1,57 @@
+@use "../common/common.scss" as *;
+
+header > nav > .nav-links a:nth-child(2) {
+    color: $color;
+    transition: .3s ease;
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.hero-container {
+    @include inner-page-hero;
+    h1 {
+        font-size: 42px;
+    }
+}
+
+.page-container {
+    @include page-styles;
+    .page-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 75%;
+        padding-top: 8%;
+        padding-left: 12.5%;
+        .post-label {
+            font-size: 14px;
+            margin-bottom: 8%;
+            h3 {
+                font-size: 25px;
+                color: $text;
+                margin-top: 10px;
+            }
+            p {
+                color: grey;
+                a {
+                    color: rgb(39, 39, 163);
+                }
+            }
+            a {
+                text-decoration: none;
+                transition: .3s ease;
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+        .post-label a:nth-child(1) {
+            font-size: 12px;
+        }
+        .post-label p:nth-child(4) {
+            color: $text;
+        }
+    }
+}
+

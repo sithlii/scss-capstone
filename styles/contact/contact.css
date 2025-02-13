@@ -103,4 +103,75 @@ footer .footer-wrapper .foot-links a {
 }
 footer .footer-wrapper .foot-links a:hover {
   color: grey;
-}/*# sourceMappingURL=common.css.map */
+}
+
+header > nav > .nav-links a:nth-child(3) {
+  color: #e91e63;
+  transition: 0.3s ease;
+}
+header > nav > .nav-links a:nth-child(3):hover {
+  opacity: 0.5;
+}
+
+.hero-container {
+  background-image: linear-gradient(to right, #bd2088, #e91e63);
+  color: white;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  color: #3c4858;
+}
+.page-container h1 {
+  font-size: 37px;
+  padding-bottom: 60px;
+}
+.page-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  padding-left: 10%;
+}
+.page-container form input, .page-container form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+.page-container form input:focus, .page-container form textarea:focus {
+  border-bottom: 1px solid #e91e63;
+}
+.page-container form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+.page-container form button[type=submit] {
+  max-width: 120px;
+  color: white;
+  padding: 14px 33px;
+  margin-top: 30px;
+  color: white;
+  background-color: #e91e63;
+  border: 1px solid #e91e63;
+  transition: 0.3s ease;
+}
+.page-container form button[type=submit]:hover {
+  box-shadow: 0 10px 15px 0 rgba(233, 30, 99, 0.14), 0 3px 10px -2px rgba(233, 30, 99, 0.2), 0 1px 15px 0 rgba(233, 30, 99, 0.2);
+}/*# sourceMappingURL=contact.css.map */

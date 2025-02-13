@@ -1,0 +1,67 @@
+@use "../common/common.scss" as *;
+
+header > nav > .nav-links a:nth-child(3) {
+    color: $color;
+    transition: .3s ease;
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.hero-container {
+    @include inner-page-hero;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    color: $text;
+    h1 {
+        font-size: 37px;
+        padding-bottom: 60px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        padding-left: 10%;
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-bottom: 1px solid grey;
+            outline: none;
+            transition: .1s ease-in-out;
+            &:focus {
+                border-bottom: 1px solid $color;
+            }
+        }
+        textarea {
+            font-family:Arial, Helvetica, sans-serif;
+            resize: none;
+        }
+        button[type='submit'] {
+            max-width: 120px;
+            color: white;
+            padding: 14px 33px;
+            margin-top: 30px;
+            color: white;
+            background-color: $color;
+            border: 1px solid $color;
+            transition: .3s ease;
+            &:hover {
+                box-shadow: 0 10px 15px 0 rgba(233,30,99,.14),0 3px 10px -2px rgba(233,30,99,0.2),0 1px 15px 0 rgba(233,30,99,0.2);
+            }
+        }
+    }
+
+}

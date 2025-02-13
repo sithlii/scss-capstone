@@ -4,6 +4,55 @@ body, html {
     height: 100%;
     width: 100vw;
     overflow-x: hidden;
+    background-color: rgb(220, 227, 235);
+}
+
+$color: #e91e63;
+$text: #3c4858;
+@mixin inner-page-hero {
+    background-image: linear-gradient(to right, #bd2088, #e91e63);
+    color: white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin page-styles {
+    width: 95%;
+    margin-left:2.5%;
+    margin-top: -4%;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2), -5px 0 15px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+    font-family: "Roboto-Slab";
+    src: url('../fonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
+:root {
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header > nav > a {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .hero-title h1 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .page-container h1,
+    .page-container h2,
+    .page-container h3,
+    .page-container a {
+        font-family: "Roboto-Slab";
+    }
+    button {
+        border-radius: 3px;
+    }
 }
 
 header {
@@ -13,21 +62,25 @@ header {
     width: 100%;
     position: fixed;
     z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
     nav {
         display: flex;
         justify-content: space-between;
         margin: 0 100px;
+        
         h3 {
             font-size: 18px;
             margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
             transition: .3s ease;
             &:hover {
-                color:grey;
+                opacity:.7;
             }
         }
         a {
             text-decoration: none;
-            color: black;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .nav-links {
             margin: 10px 0;
@@ -36,13 +89,13 @@ header {
                 padding: 15px;
                 transition: .3s ease;
                 &:hover {
-                    color: #e91e63;
+                    color: $color;
                 }
             }
             button {
                 color: white;
-                background-color: #e91e63;
-                border: 1px solid #e91e63;
+                background-color: $color;
+                border: 1px solid $color;
                 border-radius: 24px;
                 padding: 15px 20px;
                 transition: .3s ease;
@@ -50,6 +103,29 @@ header {
                     box-shadow: 0 2px 15px 0 rgba(233,30,99,.14),0 3px 10px -2px rgba(233,30,99,0.2),0 1px 15px 0 rgba(233,30,99,0.2);
                     color: rgb(219, 219, 219);
                 }
+            }
+        }
+    }
+}
+
+footer {
+    height:90px;
+    background-color: rgb(49, 49, 49);
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        margin: 0 100px;
+        padding: 25px;
+        font-size: 14px;
+        .foot-links a{
+            text-decoration: none;
+            color: white;
+            margin-right: 50px;
+            transition: .3s ease;
+            &:hover {
+                color: grey;
             }
         }
     }
