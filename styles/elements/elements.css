@@ -109,14 +109,6 @@ footer .footer-wrapper .foot-links a:hover {
   color: grey;
 }
 
-header > nav > .nav-links a:nth-child(2) {
-  color: #e91e63;
-  transition: 0.3s ease;
-}
-header > nav > .nav-links a:nth-child(2):hover {
-  opacity: 0.5;
-}
-
 .hero-container {
   background-image: linear-gradient(to right, #bd2088, #e91e63);
   color: white;
@@ -126,8 +118,19 @@ header > nav > .nav-links a:nth-child(2):hover {
   justify-content: center;
   align-items: center;
 }
-.hero-container h1 {
-  font-size: 42px;
+.hero-container .hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hero-container .hero-content-wrapper h1 {
+  font-size: 37px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+.hero-container .hero-content-wrapper p {
+  margin-top: 10px;
 }
 
 .page-container {
@@ -139,40 +142,10 @@ header > nav > .nav-links a:nth-child(2):hover {
   border-radius: 8px 8px 0 0;
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2), -5px 0 15px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.page-container .page-content-wrapper {
+.page-container .page-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 75%;
-  padding-top: 8%;
-  padding-left: 12.5%;
 }
-.page-container .page-content-wrapper .post-label {
-  font-size: 14px;
-  margin-bottom: 8%;
-}
-.page-container .page-content-wrapper .post-label h3 {
-  font-size: 25px;
-  color: #3c4858;
-  margin-top: 10px;
-}
-.page-container .page-content-wrapper .post-label p {
-  color: grey;
-}
-.page-container .page-content-wrapper .post-label p a {
-  color: rgb(39, 39, 163);
-}
-.page-container .page-content-wrapper .post-label a {
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-.page-container .page-content-wrapper .post-label a:hover {
-  opacity: 0.7;
-}
-.page-container .page-content-wrapper .post-label a:nth-child(1) {
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.page-container .page-content-wrapper .post-label p:nth-child(4) {
-  color: #3c4858;
-}/*# sourceMappingURL=blog.css.map */
+.page-container .page-content hr {
+  width: 100%;
+}/*# sourceMappingURL=elements.css.map */
