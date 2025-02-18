@@ -9,6 +9,13 @@ body, html {
   background-color: rgb(220, 227, 235);
 }
 
+.page-container h1,
+.page-container h2,
+.page-container h3,
+.page-container a {
+  font-family: "Roboto-Slab";
+}
+
 @font-face {
   font-family: "Roboto-Slab";
   src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
@@ -21,12 +28,6 @@ body, html {
 }
 :root .hero-title h1 {
   font-family: Arial, Helvetica, sans-serif;
-}
-:root .page-container h1,
-:root .page-container h2,
-:root .page-container h3,
-:root .page-container a {
-  font-family: "Roboto-Slab";
 }
 :root button {
   border-radius: 3px;
@@ -102,13 +103,33 @@ footer .footer-wrapper .foot-links a {
   font-size: 12px;
   text-decoration: none;
   color: white;
-  margin-right: 50px;
   transition: 0.3s ease;
 }
 footer .footer-wrapper .foot-links a:hover {
   color: grey;
 }
 
+@media (max-width: 750px) and (min-width: 425px) {
+  header nav {
+    margin: 0 15px;
+  }
+  header nav .nav-links a {
+    padding: 5px;
+  }
+  footer {
+    height: 15%;
+  }
+  footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    padding: 15px 0;
+  }
+  footer .footer-wrapper .foot-links a {
+    padding: 15px;
+    margin-right: 0;
+  }
+}
 header > nav > .nav-links a:nth-child(2) {
   color: #e91e63;
   transition: 0.3s ease;
@@ -175,4 +196,32 @@ header > nav > .nav-links a:nth-child(2):hover {
 }
 .page-container .page-content-wrapper .post-label p:nth-child(4) {
   color: #3c4858;
+}
+
+@media (max-width: 750px) and (min-width: 425px) {
+  .hero-container {
+    height: 45%;
+  }
+  .hero-container .hero-title h1 {
+    font-size: 26px;
+  }
+  .page-container {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    margin-top: -18%;
+  }
+  .page-container .page-content-wrapper {
+    padding: 20px 15px;
+    width: 90%;
+  }
+  .page-container .page-content-wrapper .post-label {
+    margin-bottom: 15%;
+  }
+  .page-container .page-content-wrapper .post-label h3 {
+    margin: 0;
+  }
+  .page-container .page-content-wrapper .post-label p {
+    margin: 0 0 15px;
+  }
 }/*# sourceMappingURL=blog.css.map */

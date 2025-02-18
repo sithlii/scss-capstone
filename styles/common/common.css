@@ -103,9 +103,30 @@ footer .footer-wrapper .foot-links a {
   font-size: 12px;
   text-decoration: none;
   color: white;
-  margin-right: 50px;
   transition: 0.3s ease;
 }
 footer .footer-wrapper .foot-links a:hover {
   color: grey;
+}
+
+@media (max-width: 750px) and (min-width: 425px) {
+  header nav {
+    margin: 0 15px;
+  }
+  header nav .nav-links a {
+    padding: 5px;
+  }
+  footer {
+    height: 15%;
+  }
+  footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    padding: 15px 0;
+  }
+  footer .footer-wrapper .foot-links a {
+    padding: 15px;
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=common.css.map */

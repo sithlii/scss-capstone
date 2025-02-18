@@ -159,11 +159,36 @@ footer {
             font-size: 12px;
             text-decoration: none;
             color: white;
-            margin-right: 50px;
+            // margin-right: 50px;
             transition: .3s ease;
             &:hover {
                 color: grey;
             }
         }
     }
+}
+
+@media (max-width: 750px) and (min-width: 425px) {
+
+    header nav {
+        margin: 0 15px;
+        .nav-links a {
+            padding: 5px; 
+        }
+    }
+
+    footer {
+        height: 15%;
+        .footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0;
+            padding: 15px 0;
+            .foot-links a {
+                padding: 15px;
+                margin-right: 0;
+            }
+        }
+    }
+    
 }
