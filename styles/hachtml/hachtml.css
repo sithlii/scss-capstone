@@ -78,6 +78,7 @@ header nav .nav-links button {
   border: 1px solid #e91e63;
   border-radius: 24px;
   padding: 15px 20px;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 header nav .nav-links button:hover {
@@ -103,13 +104,33 @@ footer .footer-wrapper .foot-links a {
   font-size: 12px;
   text-decoration: none;
   color: white;
-  margin-right: 50px;
   transition: 0.3s ease;
 }
 footer .footer-wrapper .foot-links a:hover {
   color: grey;
 }
 
+@media (max-width: 750px) and (min-width: 425px) {
+  header nav {
+    margin: 0 15px;
+  }
+  header nav .nav-links a {
+    padding: 5px;
+  }
+  footer {
+    height: 15%;
+  }
+  footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    padding: 15px 0;
+  }
+  footer .footer-wrapper .foot-links a {
+    padding: 15px;
+    margin-right: 0;
+  }
+}
 .hero-container {
   background-image: linear-gradient(to right, #bd2088, #e91e63);
   color: white;
@@ -328,4 +349,45 @@ footer .footer-wrapper .foot-links a:hover {
 }
 .related-posts-container .post-content-wrapper .post-content p a {
   color: rgb(39, 39, 163);
+}
+
+@media (max-width: 750px) and (min-width: 425px) {
+  .hero-container {
+    height: 45%;
+  }
+  .hero-container .hero-content-wrapper h1 {
+    font-size: 26px;
+  }
+  .page-container {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    margin-top: -18%;
+  }
+  .page-container .main-content,
+  .page-container .content-footer {
+    width: 90%;
+    padding: 20px 15px;
+  }
+  .page-container .main-content p, .page-container .main-content li {
+    font-size: 16px;
+  }
+  .page-container .content-footer .socials {
+    margin-top: 10%;
+    text-align: left;
+  }
+  .page-container .comment-section .comment-section-wrapper {
+    width: 90%;
+    padding: 50px 15px;
+  }
+  .related-posts-container h1 {
+    font-size: 24px;
+    margin-bottom: 20%;
+  }
+  .related-posts-container .post-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 15px;
+  }
 }/*# sourceMappingURL=hachtml.css.map */

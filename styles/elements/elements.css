@@ -78,6 +78,7 @@ header nav .nav-links button {
   border: 1px solid #e91e63;
   border-radius: 24px;
   padding: 15px 20px;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 header nav .nav-links button:hover {
@@ -187,6 +188,24 @@ footer .footer-wrapper .foot-links a:hover {
 .page-container .page-content a:hover,
 .page-container .content-footer a:hover {
   opacity: 0.7;
+}
+.page-container .page-content .headers h1 {
+  font-size: 42px;
+}
+.page-container .page-content .headers h2 {
+  font-size: 37px;
+}
+.page-container .page-content .headers h3 {
+  font-size: 32px;
+}
+.page-container .page-content .headers h4 {
+  font-size: 27px;
+}
+.page-container .page-content .headers h5 {
+  font-size: 23px;
+}
+.page-container .page-content .headers h6 {
+  font-size: 18px;
 }
 .page-container .page-content, .page-container form {
   color: #3c4858;
@@ -435,8 +454,26 @@ footer .footer-wrapper .foot-links a:hover {
   .page-container .page-content h1, .page-container .page-content h2 {
     font-size: 28px;
   }
+  .page-container .page-content .headers h1 {
+    font-size: 30px;
+  }
+  .page-container .page-content .headers h2 {
+    font-size: 28px;
+  }
+  .page-container .page-content .headers h3 {
+    font-size: 24px;
+  }
+  .page-container .page-content .headers h4 {
+    font-size: 22px;
+  }
+  .page-container .page-content .headers h5 {
+    font-size: 20px;
+  }
+  .page-container .page-content .headers h6 {
+    font-size: 18px;
+  }
   .page-container .content-footer .socials {
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: left;
   }
   .related-posts-container h1 {

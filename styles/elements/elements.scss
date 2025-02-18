@@ -42,6 +42,14 @@
             }
         }
     }
+    .page-content .headers {
+        h1 {font-size: 42px;}
+        h2 {font-size: 37px;}
+        h3 {font-size: 32px;}
+        h4 {font-size: 27px;}
+        h5 {font-size: 23px;}
+        h6 {font-size: 18px;}
+    }
     .page-content, form {
         color: $text;
         h1, h2, h3, h4, h5, h6, p {
@@ -268,9 +276,17 @@
             h1, h2 {
                 font-size: 28px;
             }
+            .headers {
+                h1 {font-size: 30px;}
+                h2 {font-size: 28px;}
+                h3 {font-size: 24px;}
+                h4 {font-size: 22px;}
+                h5 {font-size: 20px;}
+                h6 {font-size: 18px;}
+            }
         }
         .content-footer .socials {
-            margin-top: 5%;
+            margin-top: 10%;
             text-align: left;
         }
     }
