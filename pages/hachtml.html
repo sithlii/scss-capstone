@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../styles/hachtml/hachtml.css">
 </head>
 <body>
     <header>
@@ -72,22 +73,27 @@
             </ol>
         </div>
         <div class="content-footer">
-            <p>Categories: <button>UNCATEGORIZED</button></p>
-            <p>Tags: <a href="#">html</a> <a href="#">wordpress</a></p>
-            <div class="socials">
-                <i class="fa-brands fa-facebook-f" style="background-color: rgb(76, 76, 255); color: white;"></i>
-                <i class="fa-brands fa-twitter" style="background-color: black; color: white;"></i>
-                <i class="fa-solid fa-envelope" style="background-color: grey; color: white;"></i>
+            <div class="other">
+                <p>Categories: <a href="#" class="uncategorized">UNCATEGORIZED</a></p>
+                <p>Tags: <a href="#">html</a> <a href="#">wordpress</a></p>
             </div>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook-f" style="background-color: rgb(76, 76, 255); color: white;"></i><span class="tooltip">Share on Facebook</span></a>
+                <a href="#"><i class="fa-brands fa-twitter" style="background-color: black; color: white;"></i><span class="tooltip">Share on X</span></a>
+                <a href="#"><i class="fa-solid fa-envelope" style="background-color: grey; color: white;"></i><span class="tooltip">Share on Email</span></a>
+            </div>
+            <hr>
         </div>
 
         <div class="comment-section">
-            <div class="comment-section wrapper">
+            <div class="comment-section-wrapper">
                 <h1>1 Comment</h1>
-                <div class="comment">
+                <div class="comment-content">
                     <img src="../assets/jjpfp.png" alt="Jon Jones">
-                    <p><span>Jon Jones</span> . June 21, 2008 at 12:07 am</p>
-                    <p>Isaac is so good at HTML and SCSS, he's honestly just an absolute unit.</p>
+                    <div class="comment">
+                        <p><a href="#">Jon Jones</a> . June 21, 2008 at 12:07 am</p>
+                        <p>Isaac is so good at HTML and SCSS (not to mention devilishly handsome), and to be completely honest he's just an absolute unit.</p>
+                    </div>
                 </div>
                 <h1>Comments are closed.</h1>
             </div>
@@ -98,17 +104,17 @@
         <h1>Related Posts</h1>
         <div class="post-content-wrapper">
             <div class="post-content">
-                <a href="#">UNCATEGORIZED</a>
+                <a href="#" style="color: purple; font-size: 12px;">UNCATEGORIZED</a>
                 <a href="#"><h3>Worth A Thousand Words</h3></a>
-                <p>Out of scope.</p>
+                <p>Boat.</p>
             </div>
             <div class="post-content">
-                <a href="#">UNCATEGORIZED</a>
+                <a href="#" style="color: teal; font-size: 12px;">UNCATEGORIZED</a>
                 <a href="./pages/elements.html"><h3>Elements</h3></a>
                 <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any <a href="./pages/elements.html">Read more</a>...</p>
             </div>
             <div class="post-content">
-                <a href="#">UNCATEGORIZED</a>
+                <a href="#" style="color: orange; font-size: 12px;">UNCATEGORIZED</a>
                 <a href="./hachtml.html"><h3>HTML</h3></a>
                 <p>What HTML tags would you like to see? Let's start with an unordered list: One Two Three Four And then move on to a more interesting ordered list: one, two buckle my shoe three, four <a href="./pages/hachtml.html">Read more</a>...</p>
             </div>
@@ -116,11 +122,13 @@
     </div>
 
     <footer>
-        <div class="foot-links">
-            <a href="#">ABOUT</a>
-            <a href="#">PARENT PAGE</a>
+        <div class="footer-wrapper">
+            <div class="foot-links">
+                <a href="#">ABOUT</a>
+                <a href="#">PARENT PAGE</a>
+            </div>
+            <p>Hestia | Developed by ThemeIsle</p>
         </div>
-        <p>Hestia | Developed by ThemeIsle</p>
     </footer>
 </body>
 </html>

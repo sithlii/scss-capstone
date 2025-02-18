@@ -143,7 +143,7 @@ footer .footer-wrapper .foot-links a:hover {
   border-radius: 8px 8px 0 0;
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2), -5px 0 15px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.page-container .page-content,
+.page-container .main-content,
 .page-container .content-footer {
   display: flex;
   flex-direction: column;
@@ -152,139 +152,29 @@ footer .footer-wrapper .foot-links a:hover {
   padding: 50px 20%;
   font-size: 18px;
 }
-.page-container .page-content hr,
+.page-container .main-content hr,
 .page-container .content-footer hr {
   width: 100%;
   margin: 20px 0;
 }
-.page-container .page-content a,
-.page-container .content-footer a {
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: #e91e63;
-  transition: 0.3s ease;
-}
-.page-container .page-content a:hover,
-.page-container .content-footer a:hover {
-  opacity: 0.7;
-}
-.page-container .page-content, .page-container form {
-  color: #3c4858;
-}
-.page-container .page-content h1, .page-container .page-content h2, .page-container .page-content h3, .page-container .page-content h4, .page-container .page-content h5, .page-container .page-content h6, .page-container .page-content p, .page-container form h1, .page-container form h2, .page-container form h3, .page-container form h4, .page-container form h5, .page-container form h6, .page-container form p {
+.page-container .main-content p,
+.page-container .content-footer p {
   margin: 0 0 15px;
+}
+.page-container .main-content li,
+.page-container .content-footer li {
   font-family: Arial, Helvetica, sans-serif;
-}
-.page-container .page-content h2, .page-container form h2 {
-  font-size: 37px;
-}
-.page-container .page-content ol, .page-container .page-content ul, .page-container form ol, .page-container form ul {
-  margin: 0 0 30px;
-  padding: 0 0 0 40px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.page-container .page-content label, .page-container form label {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-.page-container legend {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 21px;
-  margin: 0 0 20px;
-}
-.page-container form .text-field input,
-.page-container form .textarea-field textarea,
-.page-container form .password-field input {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: none;
-  border-bottom: 1px solid grey;
-  outline: none;
-  transition: 0.1s ease-in-out;
-  width: 98%;
-  text-indent: 0;
-}
-.page-container form .text-field input:focus,
-.page-container form .textarea-field textarea:focus,
-.page-container form .password-field input:focus {
-  border-bottom: 1px solid #e91e63;
-}
-.page-container form textarea {
-  font-family: Arial, Helvetica, sans-serif;
-  resize: none;
-}
-.page-container form select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  font-size: 18px;
-  padding: 7px;
-}
-.page-container form .upload-field input {
-  font-size: 18px;
-  padding: 7px;
-}
-.page-container form .clear {
-  font-size: 19px;
-  padding: 10px 7px;
-  box-sizing: border-box;
-  border: 0.5px solid black;
-  box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
-}
-.page-container form .clear:hover {
-  color: white;
-  background-color: rgb(225, 225, 225);
-}
-.page-container form .submit {
-  max-width: 120px;
-  color: white;
-  padding: 14px 33px;
-  color: white;
-  background-color: #e91e63;
-  border: 1px solid #e91e63;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.page-container table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.page-container table thead, .page-container table tr:not(:last-child) {
-  border-bottom: 1px solid rgb(237, 235, 235);
-}
-.page-container table thead {
-  text-align: left;
-}
-.page-container table th, .page-container table td {
-  padding: 12px 8px;
-}
-.page-container pre {
-  overflow: auto;
-  white-space: pre;
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #eeeded;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.page-container blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-style: italic;
-  border-left: 5px solid #eee;
 }
 .page-container .content-footer {
   padding-top: 0;
   font-size: 14px;
 }
 .page-container .content-footer a {
+  text-decoration: none;
+  color: #e91e63;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page-container .content-footer .uncategorized {
   font-size: 10px;
   background-color: #e91e63;
   color: white;
@@ -293,6 +183,7 @@ footer .footer-wrapper .foot-links a:hover {
 }
 .page-container .content-footer .socials {
   text-align: right;
+  margin-top: -4%;
 }
 .page-container .content-footer .socials a {
   position: relative;
@@ -348,6 +239,54 @@ footer .footer-wrapper .foot-links a:hover {
   background-color: grey;
   border-radius: 30px;
 }
+.page-container .comment-section {
+  text-align: center;
+}
+.page-container .comment-section .comment-section-wrapper {
+  width: 60%;
+  padding: 50px 20%;
+  font-size: 18px;
+}
+.page-container .comment-section .comment-section-wrapper h1 {
+  font-size: 27px;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content {
+  display: flex;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content img {
+  height: 64px;
+  width: 64px;
+  aspect-ratio: auto 64/64;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content img:hover {
+  opacity: 0.7;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content .comment {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content .comment p {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #555555;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content .comment a {
+  font-weight: bold;
+  font-family: "Roboto-Slab";
+  font-size: 18.2px;
+  color: #3c4858;
+  text-decoration: none;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content .comment a:hover {
+  opacity: 0.7;
+}
+.page-container .comment-section .comment-section-wrapper .comment-content .comment p:nth-child(1) {
+  font-size: 13.54px;
+  color: #777777;
+}
 
 .related-posts-container {
   text-align: center;
@@ -389,4 +328,4 @@ footer .footer-wrapper .foot-links a:hover {
 }
 .related-posts-container .post-content-wrapper .post-content p a {
   color: rgb(39, 39, 163);
-}/*# sourceMappingURL=elements.css.map */
+}/*# sourceMappingURL=hachtml.css.map */

@@ -11,6 +11,14 @@ body, html {
 
 $color: #e91e63;
 $text: #3c4858;
+
+.page-container h1,
+.page-container h2,
+.page-container h3,
+.page-container a {
+    font-family: "Roboto-Slab";
+}
+
 @mixin inner-page-hero {
     background-image: linear-gradient(to right, #bd2088, #e91e63);
     color: white;
@@ -31,6 +39,37 @@ $text: #3c4858;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2), -5px 0 15px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+@mixin input-textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    transition: .1s ease-in-out;
+    &:focus {
+        border-bottom: 1px solid $color;
+    }
+}
+
+@mixin tooltip-basic {
+    visibility: hidden;
+    width: 120px;
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+    transition: opacity 0.3s;
+}
+
 @font-face {
     font-family: "Roboto-Slab";
     src: url('../fonts/RobotoSlab-VariableFont_wght.ttf');
@@ -45,12 +84,6 @@ $text: #3c4858;
     }
     .hero-title h1 {
         font-family: Arial, Helvetica, sans-serif;
-    }
-    .page-container h1,
-    .page-container h2,
-    .page-container h3,
-    .page-container a {
-        font-family: "Roboto-Slab";
     }
     button {
         border-radius: 3px;
