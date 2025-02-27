@@ -61,6 +61,10 @@
             color: white;
             padding: 5px 15px;
             border-radius: 12px;
+            transition: .3s ease;
+            &:hover {
+                opacity: .7;
+            }
         }
         .socials {
             text-align: right;

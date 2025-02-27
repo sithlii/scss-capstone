@@ -118,13 +118,15 @@ footer .footer-wrapper .foot-links a:hover {
     padding: 5px;
   }
   footer {
-    height: 15%;
+    height: 10%;
   }
   footer .footer-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
     margin: 0 0;
-    padding: 15px 0;
+    padding: 20px 0;
   }
   footer .footer-wrapper .foot-links a {
     padding: 15px;
@@ -205,6 +207,10 @@ footer .footer-wrapper .foot-links a:hover {
   color: white;
   padding: 5px 15px;
   border-radius: 12px;
+  transition: 0.3s ease;
+}
+.page-container .content-footer .uncategorized:hover {
+  opacity: 0.7;
 }
 .page-container .content-footer .socials {
   text-align: right;

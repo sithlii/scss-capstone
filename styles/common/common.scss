@@ -160,7 +160,6 @@ footer {
             font-size: 12px;
             text-decoration: none;
             color: white;
-            // margin-right: 50px;
             transition: .3s ease;
             &:hover {
                 color: grey;
@@ -179,12 +178,14 @@ footer {
     }
 
     footer {
-        height: 15%;
+        height: 10%;
         .footer-wrapper {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            background-color: rgb(49, 49, 49);
             margin: 0 0;
-            padding: 15px 0;
+            padding: 20px 0;
             .foot-links a {
                 padding: 15px;
                 margin-right: 0;
